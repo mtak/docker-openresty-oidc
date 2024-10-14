@@ -3,6 +3,7 @@ FROM openresty/openresty:bookworm
 
 RUN apt-get update && \
     apt-get install -y \
+        ca-certificates \
         luarocks \
         && rm -rf /var/lib/apt/lists/*
 
